@@ -1,5 +1,4 @@
 # Social Recommendation
-Last Update by Prabin
 Online social communities are an essential part of today's online experience. Therefore, social recommendation has drawn extensive attention in recent years. 
 We argue that users' choices are determined by two main factors, dynamic interests and social influences. Based on this assumption, we develop a session-based social recommender system called DGRec in this project.
 Specifically, we model users' dynamic interest using recurrent neural networks, and model the context-dependent social influences with dynamic graph attention networks. Please refer to our WSDM'19 paper [Session-based Social Recommendation via Dynamic Graph Attention Networks](https://dl.acm.org/citation.cfm?id=3290989) for further details.
