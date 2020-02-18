@@ -255,7 +255,7 @@ def parseArgs():
 def main(argv=None):
     args = parseArgs()
     print('Loading training data..')
-    data = load_data('data/data/')
+    data = load_data('data')
     print("Training data loaded!")
     train(args, data)
 

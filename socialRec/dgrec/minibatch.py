@@ -245,8 +245,7 @@ class MinibatchIterator(object):
         missed = 0
         data = self.all_data
         for nodeid in data.UserId.unique():
-            neighbors = np.array([neighbor for neighbor in 
-                                self.adj_info.loc[self.adj_info['Follower']==nodeid].Followee.unique()], dtype=np.int32)
+            neighbors = np.array([neighbor for neighbor in self.adj_info.loc[self.adj_info['Follower']==nodeid].Followee.unique()], dtype=np.int32)
             deg[nodeid] = len(neighbors)
             if len(neighbors) == 0:
                 missed += 1
@@ -292,7 +291,7 @@ class MinibatchIterator(object):
 
 
 if __name__ == '__main__':
-    data = load_data('path/to/data')
+    data = load_data('data')
     adj_info = data[0]
     latest_per_user_by_time = data[1]
     user_id_map = data[2]

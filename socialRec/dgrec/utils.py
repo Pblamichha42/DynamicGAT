@@ -42,5 +42,5 @@ def load_data(data_path):
 
 if __name__ == '__main__':
     # test data loading.
-    data_path = 'path/to/data/'
+    data_path = 'data'
     data = load_data(data_path)

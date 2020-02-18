@@ -199,7 +199,7 @@ def parseArgs():
 def main(argv=None):
     args = parseArgs()
     print('Loading data..')
-    data = load_data('data/')
+    data = load_data('data')
     print("Done loading data..")
     test(args, data)
 
